@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eunhye's Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--로고-->
+        <h1 id="logo"><a href="#"><span>EUN</span>HYE</a></h1>
+
+        <!--메뉴 버튼-->
+        <h2 id="menu_btn">
+            <a href="#">
+                <span id="t_stick"></span>
+                <span id="b_stick"></span>
+            </a>
+        </h2>
+
+        <!--메인메뉴-->
+        <div id="menu_wrap">
+            <nav id="main_menu">
+                <ul>
+                    <li><a href="#main">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="menu_bg1" class="menu_bg"></div>
+            <div id="menu_bg2" class="menu_bg"></div>
+        </div>
+    </header>
+    <!--메인화면-->
+    <div id="main">
+        <!--메인 왼쪽 화면-->
+        <div id="main_left">
+            <div id="main_txtbox">
+                <span id="main_subtit"> 배움에 대한 열정을 가진 조은혜입니다.</span>
+                <p><span>Eunhye’s</span>PORTFOLIO</p>
+            </div>
+        </div>
+
+        <!--늘어나는 화면-->
+        <div id="change"></div>
+
+
+        <!--메인 오른쪽 화면-->
+        <div id="main_right">
+            <div id="large_circle1"></div>
+            <div id="small_circle"></div>
+            <div id="round_sqr1"></div>
+            <div id="round_sqr2"></div>
+        </div>
+    </div>
+
+    <!--skills 섹션-->
+    <section id="skills">
+
+        <!--skills 제목-->
+        <div class="contents_tit">
+            <h2><a href="#">SKILLS</a></h2>
+        </div>
+
+        <!--skills 내용-->
+        <div id="skills1">
+
+            <!--skills 왼쪽 박스-->
+            <div id="left_box">
+                <ul id="txt_list">
+
+                    <!--html&css 텍스트 내용-->
+                    <li>
+                        <p>2019.03~2022.03 가천대학교 유아교육학과 졸업</p>
+                        <p>2022.10~2023.01 부트캠프 위코드 수료</p>
+                        <p>2022.12~2023.01 리켓 인턴쉽</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--skills 오른쪽 박스-->
+            <div id="right_box">
+                <ul id="tit_list">
+
+                    <!--html&css 제목-->
+                    <li>
+                        <p class="skills_subtit">
+                            <a href="#">HTML5<br>CSS3</a>
+                            <a href="#">JAVASCRIPT<br>REACT</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--work 섹션-->
+    <section id="work">
+        <!--work 제목-->
+        <div class="contents_tit">
+            <h2><a href="#">WORK</a></h2>
+        </div>
+
+
+        <div id="work_list">
+            <!--프로필페이지2 포트폴리오-->
+            <div id="work1">
+                <!--포트폴리오 목업 왼쪽 사진 영역-->
+                <div class="work_left">
+                    <img src="img/mockup_01.png" alt="술담화 사이트">
+                </div>
+
+
+                <!--포트폴리오 오른쪽 텍스트 영역-->
+                <div class="work_right">
+                    <div class="work_txtbox">
+                        <p class="work_subtit"><a href="#">술담화</a></p>
+                        <p class="work_keyword"><mark>#전통주 판매 사이트 '술담화'를 모델링한 프로젝트 </mark></p>
+                        <p class="txt">기간 : 2022.11.14~2021.11.25
+                            <br /> 기술 스택 : JavaScript, React, SASS
+                        </p>
+                        <p class="txt">
+                            <strong style="background-color: #65d776">
+                                &lt;로그인, 회원가입&gt;
+                            </strong><br />로그인: 유효성
+                            검사,
+                            회원가입한 정보로 로그인 기능
+                            <br />회원가입: 이메일/비밀번호 유효성검사,닉네임 중복검사,약관 동의
+                        </p>
+
+                        <span class="visit_btn"><a
+                                href="https://velog.io/@yellowbutter0327/wecode-1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0"
+                                title="술담화 프로젝트 깃허브" target="_blank">회고록</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- dayafterday 가로스크롤 사이트 -->
+            <div id="work6">
+                <!--포트폴리오 왼쪽 목업 사진 영역-->
+                <div class="work_left">
+                    <img src="img/mockup_06.png" alt="VVOLT MARKET 사이트">
+                </div>
+
+                <!--포트폴리오 오른쪽 텍스트 영역-->
+                <div class="work_right">
+                    <div class="work_txtbox">
+                        <p class="work_subtit"><a href="#">VVOLT MARKET</a></p>
+                        <p class="work_keyword"><mark>#중고상품거래사이트 '번개장터'를 모델링한 프로젝트 </mark></p>
+                        <p class="txt">기간 : 2022.11.14~2021.11.25
+                            <br /> 기술 스택 : JavaScript, React, Styled-Components
+                        </p>
+
+                        <p class="txt">
+                            <strong style="background-color:#65d776">
+                                &lt;Nav, Sidebar, 상품 상세 페이지&gt;
+                            </strong><br />
+                            Nav : 하단 카테고리 펼치고 접기, 검색기능, 페이지 이동,
+                            <br /> 로그인 상태에 따른 UI변경
+                            <br />Sidebar : 최근 본 상품 기능, 맨 위로 가기 기능<br />
+                            상품 상세 페이지 : 상품 상세 데이터 가져오기, 상품 찜하기
+                        </p>
+                        <span class="visit_btn"><a
+                                href="https://velog.io/@yellowbutter0327/VVOLTMARKET%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9A%8C%EA%B3%A0"
+                                title="VVOLTMARKET VELOG 바로가기" target="_blank">회고록 </a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 케이투 포트폴리오 -->
+            <div id="work3">
+                <!--포트폴리오 목업 왼쪽 사진 영역-->
+                <div class="work_left">
+                    <img src="img/mockup_03.png" alt="기업협업 사이트">
+                </div>
+
+
+                <!--포트폴리오 오른쪽 텍스트 영역-->
+                <div class="work_right">
+                    <div class="work_txtbox">
+                        <p class="work_subtit"><a href="#">admin 쿠폰페이지</a></p>
+                        <p class="work_keyword"><mark>#기업협업: 패선 콘텐츠 플랫폼 회사 인턴</p>
+                        <p class="txt">기간 : 2022.12.12~2023.01.05
+                            <br /> 기술 스택 : React.js, JavaScript, Next.js, yarn, mobx
+                        </p>
+                        <p class="txt">
+                            <strong style="background-color:#65d776">
+                                &lt;admin 쿠폰관리 페이지&gt;
+                            </strong><br />
+                            쿠폰 데이터를 받아와 개수별로 정렬 <br />쿠폰 전체/부분 선택, 필터링, 검색기능
+                            <br />next.js, mobx, antd, datepicker의 사용
+                            <br />jira,slack을 통한 커뮤니케이션 <br />
+                            sprint를 사용해서 scrum 단위로 업무 진행
+                            <br />
+                        </p>
+                        <span class="visit_btn"><a
+                                href="https://velog.io/@yellowbutter0327/%EA%B8%B0%EC%97%85%ED%98%91%EC%97%85-%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+                                title="HYESTAGRAM 회고록" target="_blank">회고록</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--벤자민무어 포트폴리오-->
+            <div id="work4">
+                <!--포트폴리오 목업 왼쪽 사진 영역-->
+                <div class="work_left">
+                    <img src="img/mockup_04.png" alt="HYESTAGRAM 사이트">
+                </div>
+
+
+                <!--포트폴리오 오른쪽 텍스트 영역-->
+                <div class="work_right">
+                    <div class="work_txtbox">
+                        <p class="work_subtit"><a href="#">HYESTAGRAM</a></p>
+                        <p class="work_keyword"><mark>#인스타그램을 모델링한 프로젝트</mark></p>
+                        <p class="txt">기간 : 2023.04.01~2023.05.08
+                            <br /> 기술 스택 : JavaScript, React, SCSS, Firebase
+                        </p>
+                        <p class="txt">
+                            <strong style="background-color:#65d776">
+                                &lt;회원가입, 로그인, 메인페이지&gt;
+                            </strong><br />
+                            회원가입 : 유효성 검사, firebase를 사용한 회원가입 기능 구현
+
+                            <br /> 로그인 :
+                            유효성 검사, 화면 전환 기능,
+                            firebase 및 세션스토리지를 사용한 로그인 기능 구현
+
+                            <br />메인페이지 : mockdata로 인스타 피드 구현, 좋아요 및 댓글 달기, 인스타 스토리, 유저 팔로우, 다크모드, 유저 아이디 검색 기능, 로그아웃
+                            <br />
+
+                        </p>
+                        <span class="visit_btn"><a href="https://velog.io/@yellowbutter0327/hyestagram"
+                                title="HYESTAGRAM 회고록" target="_blank">회고록</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--트로피카나 포트폴리오-->
+            <div id="work2">
+                <!--포트폴리오 왼쪽 목업 사진 영역-->
+                <div class="work_left">
+                    <img src="img/mockup_02.png" alt="MYCOLOR 사이트">
+                </div>
+
+                <!--포트폴리오 오른쪽 텍스트 영역-->
+                <div class="work_right">
+                    <div class="work_txtbox">
+                        <p class="work_subtit"><a href="#">MYCOLOR</a></p>
+                        <p class="work_keyword"><mark>#퍼스널컬러 쇼핑몰 사이트</mark></p>
+                        <p class="txt">기간 : 2023.04.01~2023.05.08
+                            <br /> 기술 스택 : JavaScript, React, SCSS, Firebase, Redux
+                        </p>
+                        <p class="txt">
+                            <strong style="background-color:#65d776">
+                                회원가입, 로그인, 메인페이지, 퍼스널 컬러 페이지,
+                                <br />상품 리스트 페이지, 상품 상세 페이지, 장바구니 페이지, <br />검색 페이지, nav, footer
+                            </strong><br />
+                        <p class="txt">
+                            회원가입 : 약관 동의, 유효성 검사, firebase를 사용해 기능 구현
+
+                            <br /> 로그인 :
+                            유효성 검사,
+                            firebase 및 redux를 사용한 로그인 기능
+
+                            <br />메인페이지 : 상품 랜덤 추천, 캐러셀
+                            <br />퍼스널 컬러: background를 이용한 퍼스널 컬러 테스트
+                            <br />상품 리스트: 상품 데이터 보여주기, 퍼스널컬러에 따라 상품 구분, 가격순, 날짜순 조건에 따라 필터링
+                            <br />상품 상세: 상품 데이터 보여주기, 장바구니 담기
+                            <br />장바구니: 장바구니에 담긴 상품 정렬, 상품 개수 조정, 상품 삭제
+                            <br />검색 페이지: 검색어가 포함된 상품을 보여주기
+                            <br />nav, footer: 검색 기능, 로그인에 따라 다른 UI 보여주기
+
+                        </p>
+                        </p>
+                        <span class="visit_btn"><a
+                                href="https://velog.io/@yellowbutter0327/mycolor%ED%9A%8C%EA%B3%A0%EB%A1%9D"
+                                title="mycolor 회고록" target="_blank">회고록</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--about 섹션-->
+    <section id="about">
+        <!--about 제목-->
+        <div class="contents_tit">
+            <h2><a href="#">ABOUT</a></h2>
+        </div>
+
+        <!--about 내용-->
+        <div id="about1">
+            <!--about 일러스트-->
+            <img src="img/about_img.png" alt="일러스트">
+
+            <!--about 텍스트-->
+            <div id="about_txtbox">
+                <p id="about_subtit"><mark class="color">성장을 갈망하고 열정이 있는 개발자</mark></p>
+                <p id="about_txt"> 저는 유아교육학과를 졸업했지만 <mark> 교실 밖을 넘어 많은 사람에게 영향력을 미치고 싶어</mark> 개발 공부를 시작하였습니다.
+                    <br />
+                    저의 장점은 <mark>꾸준히 성장을 갈망</mark>한다는
+                    점입니다. <br />학부때도 열정을 갖고 노력하여 1년 조기졸업을 할 수 있었습니다.<br />
+                    부트캠프 위코드에서 2번의 프로젝트와 1번의 인턴쉽 경험을 하였고, 기수 내에서 가장 많이 성장한 개발자로 뽑혔습니다.
+                    수료 이후 개발 공부를 병행하며 개인 프로젝트를 진행하고 있습니다. <br /><mark>다른 사람에게 선한 영향력을 주는 개발자</mark>가 되고 싶습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact 섹션-->
+    <section id="contact">
+
+        <!--contact 제목-->
+        <div class="contents_tit">
+            <h2><a href="#">CONTACT</a></h2>
+        </div>
+
+        <!--contact 내용-->
+        <div id="contact1">
+
+            <!--contact 데코레이션 도형 및 사진-->
+            <div id="round_sqr3"></div>
+            <div id="round_sqr4"></div>
+            <div id="large_circle2"></div>
+            <img src="img/contact_img_01.png" alt="사람 일러스트" id="contact_img_01">
+            <img src="img/contact_img_02.png" alt="꽃 일러스트" id="contact_img_02">
+
+            <!--contact 텍스트 영역-->
+            <div id="contact_txtbox">
+                <p id="contact_tit"><a href="#">CONTACT</a></p>
+                <p id="email"><a href="#"><span>Email : </span>yellowbutter0327@gmail.com</a></p>
+
+                <!--contact 아이콘 영역-->
+                <ul id="icon_list">
+                    <li><a href="https://github.com/yellowbutter0327" title="깃허브 바로가기" target="_blank"><img
+                                src="img/icon_01.png" alt="Github"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="lib//jquery-1.11.1.min.js"></script>
+    <script src="lib/jquery.easing.1.3.min.js"></script>
+    <script src="js/scroll_animation.js"></script>
+    <script src="js/half_scroll.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
